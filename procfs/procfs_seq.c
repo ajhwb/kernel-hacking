@@ -91,7 +91,6 @@ int init_cpuinfo(void)
 
 	if (remove_existing)
 		remove_proc_entry(procfs_name, NULL);
-	printk(KERN_ALERT "remove_existing: %i\n", remove_existing);
 
 #if PROCFS_OBSOLETE
 	entry = create_proc_entry(procfs_name, 0644, NULL);
